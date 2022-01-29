@@ -1,0 +1,4 @@
+ajax for external api calls
+stripe for payment integration
+bootstrap
+vue?
