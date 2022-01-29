@@ -1,6 +1,0 @@
-ajax for external api calls 0/1
-stripe for payment integration 0/1
-bootstrap 1/1
-vue??? 0/0
-git integration 1/1
-
