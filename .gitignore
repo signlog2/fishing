@@ -11,3 +11,6 @@ htmlcov/
 
 dist/
 build/
+
+debug.log
+todo.txt
