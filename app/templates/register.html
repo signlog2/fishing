@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 
-{% block body %}
-
+{% block main %}
+<form action="{{ url_for('auth_bp.register') }}" method="POST">
+   <div class="container"></div>
+   {% include 'include/form.htm' %}
+   <input type="submit" value="Register" class="btn btn-danger">
+   </div>
+</form>
 {% endblock %}

@@ -5,6 +5,7 @@ __pycache__/
 
 instance/
 
+
 .pytest_cache/
 .coverage
 htmlcov/
@@ -14,3 +15,4 @@ build/
 
 debug.log
 todo.txt
+app.db

@@ -8,7 +8,7 @@ db = SQLAlchemy()
 migrate = Migrate()
 # login = LoginManager()
 
-def app_init():
+def create_app():
    # Initialize the app and the config
    app = Flask(__name__)
    app.config.from_object('config')
@@ -19,12 +19,14 @@ def app_init():
    migrate.init_app(app, db)
 
    with app.app_context():
+      
+      from app.models.User import User
 
-        # Register Blueprints
-        from app.Blueprints.index_bp import index_bp
-        from app.Blueprints.auth_bp import auth_bp
+      # Register Blueprints
+      from app.Blueprints.index_bp import index_bp
+      from app.Blueprints.auth_bp import auth_bp
         
-        app.register_blueprint(index_bp)
-        app.register_blueprint(auth_bp)
+      app.register_blueprint(index_bp)
+      app.register_blueprint(auth_bp)
 
-        return app
+      return app

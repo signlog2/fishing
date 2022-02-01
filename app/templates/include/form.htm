@@ -1,0 +1,12 @@
+{% for field in form %}
+<div class="form-group">
+   {{ field.label(class="form-label") }}
+   {{ field(class="form-control is-valid") }}
+
+   {% if field.errors %}
+   <div class="invalid-feedback d-block">
+      {{ field.errors[0] }}
+   </div>
+   {% endif %}
+</div>
+{% endfor %}
