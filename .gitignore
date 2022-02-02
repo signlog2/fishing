@@ -16,3 +16,4 @@ build/
 debug.log
 todo.txt
 app.db
+prod.txt
